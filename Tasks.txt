@@ -1,0 +1,88 @@
+Lab Group LA01-01:
+Anton Ilic, Aneel Badesha, Kyle Wong, Elwin Liu
+
+Task distribution: 
+
+PART 1:
+    Question 1 [3 marks]:
+        a. Anton Ilic
+        b. Anton Ilic
+        c. Anton Ilic
+
+    Question 2 [6.5 marks]:
+        b. Anton Ilic & Kyle Wong
+        c. Anton Ilic
+        d. Anton Ilic 
+        e. Anton Ilic & Kyle Wong
+        f. Anton Ilic & Kyle Wong
+
+    Question 3 [2.5 marks]:
+        a. Aneel Badesha
+        b. Aneel Badesha & Elwin Liu
+        c. Aneel Badesha
+
+PART 2 [3 marks]:
+    1. Elwin Liu 
+    2. Elwin Liu
+    3. Elwin Liu
+    4. Elwin Liu
+    5. Elwin Liu
+    6. Elwin Liu
+
+PART 3 [3.5 marks]: Unit testing
+    1. Kyle Wong
+    2. Kyle Wong
+    3. Kyle Wong
+    4. Kyle Wong
+    5. Kyle Wong
+    6. Aneel Badesha
+    7. Aneel Badesha
+
+PART 4 [1.5 marks]: ALGORITHM COMPLEXITY ANALYSIS (Explainations + tasks)  
+    Algorithm Complexity Analysis:
+
+    Aneel Badesha 
+
+General & Non merged lists:
+
+    The insert/deletion at a known place (insert at: head, tail), (delete: tail, head): O(1)
+    Insertion/deletion otherwise: O(n)
+    Comparaisons in Student class: O(1)
+    Priting student objects from list: O(n)
+    Setters/Getters: O(1)
+    Search functions: O(n)
+
+    Previous overall sort: O(n^2), bubble sort
+    Previous individual sort: O(n^2), bubble sort 
+    Note: we have removed the stu_sort file as we are not using those algorithms. We only use the (modified) comparaisons
+    from the interm portion, and the student class & its child classes, aswell as the toeflscore.
+
+Operations on merged list: 
+    Overall merge: O(n^2)
+    Insertion: O(n)
+    Search: O(n)
+    Printout: O(n)
+
+PART 5 [5 marks]: INNOVATION: Explainations + Tasks 
+
+1-  Anton Ilic {Doubly Linked List instead of a Singly Linked List}
+    We have chosen to use a doubly linked list instead of a singly linked list as it performs better with insertion and deletion at a known position (ie. Head & Tail)
+    Specifically, as outlined in our tasks, it performs better to delete head & tail, boasting a time efficiency of O(1).
+    Additionally, it performs better with insertion in case of insertion at head/tail, performing at o(1)/constant efficiency.
+
+2-  Aneel Badesha {applicant averages for CGPA and Research Scores}
+    Calculates the averages of domestic CGPA and Research Scores and International CGPA and Research Scores,
+    also calculates the total averages for CGPA and Research Score, and the averages for total TOEFL scores,
+    and each categories averages for reading, writing, speaking, listening.
+
+3 - Aneel Badesha {edit applicant information for both domestic and International}
+    Edits information (such as first name, last name, etc) on the student domestic and internation list, has error checking too.
+    [TODO country validity check]
+    
+4 - Kyle Wong {remove students from domestic and international lists based on CGPA, 
+               remove students from domestic and international lists based on research score}
+    Takes user input for CGPA or research score and removes all students with matching CGPA or research score in either list
+    
+    
+5 - Elwin Liu {Student admittance in a file: Top 59%, Top 55% for international}
+    Takes admitted students and places them into a file. We have chosen to do this in order to facilitate ease of getting admitted students.
